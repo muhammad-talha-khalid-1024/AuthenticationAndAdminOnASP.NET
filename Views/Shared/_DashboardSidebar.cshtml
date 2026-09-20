@@ -1,0 +1,49 @@
+<div class="col-md-2 bg-dark text-white min-vh-100 p-3">
+
+    <h4 class="mb-4">
+        My Dashboard
+    </h4>
+
+    <div class="nav flex-column">
+
+        <a asp-action="Index" asp-controller="Dashboard" class="nav-link text-white active mb-2">
+            <i class="bi bi-speedometer2 me-2"></i>
+            Dashboard
+        </a>
+
+        <a href="#" class="nav-link text-secondary mb-2">
+            <i class="bi bi-people me-2"></i>
+            Users
+        </a>
+
+        <a asp-action="Index" asp-controller="Product" class="nav-link text-secondary mb-2">
+            <i class="bi bi-box-seam me-2"></i>
+            Products
+        </a>
+
+        <a href="#" class="nav-link text-secondary mb-2">
+            <i class="bi bi-cart me-2"></i>
+            Orders
+        </a>
+
+        <a href="#" class="nav-link text-secondary mb-2">
+            <i class="bi bi-bar-chart me-2"></i>
+            Reports
+        </a>
+
+        <a href="#" class="nav-link text-secondary mb-2">
+            <i class="bi bi-gear me-2"></i>
+            Settings
+        </a>
+
+        <hr>
+
+        <form asp-action="Logout" asp-controller="Auth" method="POST">
+            <button type="submit" class="nav-link text-danger">
+                <i class="bi bi-box-arrow-right me-2"></i>
+                Logout
+            </button>
+        </form>
+
+    </div>
+</div>

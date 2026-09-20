@@ -1,0 +1,200 @@
+@{
+    Layout = "_DashboardLayout";
+    ViewData["Title"] = "Dashboard";
+}
+
+<h3 class="fw-bold">
+    @ViewData["Title"]
+</h3>
+
+<p class="text-muted">
+    Welcome back! Here's what's happening today.
+</p>
+<!-- Cards -->
+<div class="row g-4 mt-2">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-muted mb-1">
+                            Total Users
+                        </p>
+
+                        <h3 class="fw-bold">
+                            1,250
+                        </h3>
+                    </div>
+
+                    <i class="bi bi-people text-primary fs-1"></i>
+                </div>
+
+                <small class="text-success">
+                    ↑ 12% this month
+                </small>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-muted mb-1">
+                            Orders
+                        </p>
+
+                        <h3 class="fw-bold">
+                            320
+                        </h3>
+                    </div>
+
+                    <i class="bi bi-cart text-success fs-1"></i>
+                </div>
+
+                <small class="text-success">
+                    ↑ 8% this month
+                </small>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-muted mb-1">
+                            Revenue
+                        </p>
+
+                        <h3 class="fw-bold">
+                            $24,500
+                        </h3>
+                    </div>
+
+                    <i class="bi bi-currency-dollar text-warning fs-1"></i>
+                </div>
+
+                <small class="text-success">
+                    ↑ 15% this month
+                </small>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-muted mb-1">
+                            Products
+                        </p>
+
+                        <h3 class="fw-bold">
+                            85
+                        </h3>
+                    </div>
+
+                    <i class="bi bi-box-seam text-danger fs-1"></i>
+                </div>
+
+                <small class="text-danger">
+                    ↓ 3% this month
+                </small>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Recent Users -->
+<div class="card border-0 shadow-sm mt-4">
+
+    <div class="card-header bg-white">
+        <div class="d-flex justify-content-between">
+
+            <h5 class="mb-0">
+                Recent Users
+            </h5>
+
+            <button class="btn btn-primary btn-sm">
+                View All
+            </button>
+
+        </div>
+    </div>
+
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+            <table class="table table-hover">
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

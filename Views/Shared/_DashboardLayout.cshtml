@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyFirstDotNetApp</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyFirstDotNetApp.styles.css" asp-append-version="true" />
+    <style>
+            .container {
+                margin: 0;
+                padding: 0;
+                max-width: 100% !important;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Sidebar -->
+                <partial name="_DashboardSidebar" />
+
+
+                <!-- Main Content -->
+                <div class="col-md-10 p-0">
+
+                    <!-- Top Navbar -->
+                    <partial name="_DashboardNavbar" />
+
+
+                    <!-- Dashboard -->
+                    <div class="p-4 bg-light min-vh-100">
+
+                        <main role="main" class="pb-3">
+                            @RenderBody()
+                        </main>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - WebName - <a asp-area="" asp-controller="Auth" asp-action="Register">Register</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
